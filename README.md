@@ -46,9 +46,9 @@ Or install directly — see the [Meilisearch docs](https://www.meilisearch.com/d
 
 1. Download the latest release from [Releases](../../releases)
 2. Extract the ZIP into your Emby plugins directory:
-   - **Linux**: `/var/lib/emby/plugins/MeilisearchSearch/`
-   - **Windows**: `%AppData%\Emby-Server\plugins\MeilisearchSearch\`
-   - **Docker**: `/config/plugins/MeilisearchSearch/`
+   - **Linux**: `/var/lib/emby/plugins/`
+   - **Windows**: `%AppData%\Emby-Server\plugins\`
+   - **Docker**: `/config/plugins/`
 3. Make sure both `EmbyMeilisearchPlugin.dll` and `0Harmony.dll` are in the plugin folder
 4. Restart Emby Server
 
