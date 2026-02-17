@@ -1,0 +1,73 @@
+<div is="emby-scroller" class="view flex flex-direction-column scrollFrameY flex-grow" data-horizontal="false" data-forcescrollbar="true" data-centerfocus="true" data-bindheader="true" data-controller="__plugin/meilisearchjs" data-title="Meilisearch Search">
+    <div class="scrollSlider flex-grow flex-direction-column padded-left padded-left-page padded-right padded-top-page padded-bottom-page">
+
+        <form class="meilisearchConfigForm">
+
+            <div class="verticalSection" style="margin-top:2em;">
+                <h3 class="sectionTitle">Connection</h3>
+                <div class="inputContainer">
+                    <input type="text" is="emby-input" class="txtMeilisearchUrl" label="Meilisearch URL" />
+                    <div class="fieldDescription">e.g. http://localhost:7700</div>
+                </div>
+                <div class="inputContainer">
+                    <input type="password" is="emby-input" class="txtMeilisearchApiKey" label="API Key" />
+                    <div class="fieldDescription">Your Meilisearch master key</div>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" is="emby-input" class="txtIndexName" label="Index Name" />
+                </div>
+            </div>
+
+            <div class="verticalSection" style="margin-top:2em;">
+                <h3 class="sectionTitle">General</h3>
+                <div class="checkboxContainer checkboxContainer-withDescription">
+                    <label>
+                        <input is="emby-checkbox" type="checkbox" class="chkEnabled" />
+                        <span>Enable Meilisearch</span>
+                    </label>
+                </div>
+                <div class="checkboxContainer checkboxContainer-withDescription">
+                    <label>
+                        <input is="emby-checkbox" type="checkbox" class="chkAutoSync" />
+                        <span>Auto-sync on library changes</span>
+                    </label>
+                    <div class="fieldDescription checkboxFieldDescription">Automatically update the index when items are added, updated or removed</div>
+                </div>
+            </div>
+
+            <div class="verticalSection" style="margin-top:2em;">
+                <h3 class="sectionTitle">Search</h3>
+                <div class="inputContainer">
+                    <input type="number" is="emby-input" class="txtMaxResults" min="10" max="500" label="Max Search Results" />
+                </div>
+                <div class="inputContainer">
+                    <input type="number" is="emby-input" class="txtMinLength" min="1" max="5" label="Min Search Term Length" />
+                </div>
+            </div>
+
+            <div class="verticalSection" style="margin-top:2em;">
+                <h3 class="sectionTitle">Indexing</h3>
+                <div class="inputContainer">
+                    <input type="text" is="emby-input" class="txtIncludeItemTypes" label="Item Types to Index" />
+                    <div class="fieldDescription">Comma-separated (e.g. Movie,Series,Episode,LiveTvChannel,LiveTvProgram)</div>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" is="emby-input" class="txtSearchableAttributes" label="Searchable Attributes" />
+                    <div class="fieldDescription">Comma-separated fields to search on</div>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" is="emby-input" class="txtFilterableAttributes" label="Filterable Attributes" />
+                    <div class="fieldDescription">Comma-separated fields available for filtering</div>
+                </div>
+            </div>
+
+            <div style="margin-top:2em;">
+                <button is="emby-button" type="submit" class="raised button-submit block emby-button">
+                    <span>Save</span>
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
